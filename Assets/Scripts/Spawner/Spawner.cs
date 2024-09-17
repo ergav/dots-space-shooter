@@ -7,7 +7,7 @@ using UnityEngine;
 public struct  Spawner : IComponentData
 {
     public Entity prefab;
-    public Vector2 spawnPos;
+    public float2 spawnPos;
     public float nextSpawnTime;
     public float spawnRate;
 }

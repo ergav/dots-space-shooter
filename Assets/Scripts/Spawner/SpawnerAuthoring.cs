@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Entities;
@@ -18,8 +19,8 @@ public class SpawnerAuthoring : MonoBehaviour
             AddComponent(entity, new Spawner
             {
                 prefab = GetEntity(authoring.prefab, TransformUsageFlags.Dynamic),
-                spawnPos = authoring.transform.position,
-                nextSpawnTime = authoring.spawnRate,
+                spawnPos = new float2(UnityEngine.Random.Range(-8f, 8f), 6),
+            nextSpawnTime = authoring.spawnRate,
                 spawnRate = authoring.spawnRate
             });
         }

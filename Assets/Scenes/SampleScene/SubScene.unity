@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1810246882048786071, guid: c72cd5f71c46d874f99e23bc45e6c63b, type: 3}
-  spawnRate: 5
+  spawnRate: 1
 --- !u!4 &510060853
 Transform:
   m_ObjectHideFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 1322342025}
   - component: {fileID: 1322342027}
   - component: {fileID: 1322342028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
