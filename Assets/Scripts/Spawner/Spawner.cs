@@ -10,4 +10,7 @@ public struct  Spawner : IComponentData
     public float2 spawnPos;
     public float nextSpawnTime;
     public float spawnRate;
+    public float spawnRateIncreaseInterval;
+    public float spawnRateIncreaseValue;
+    public float maxSpawnRate;
 }

@@ -6,6 +6,7 @@ using Unity.Physics;
 using Unity.Collections;
 using Unity.Transforms;
 using Unity.Mathematics;
+using Unity.Scenes;
 
 public partial struct CollisionSystem : ISystem
 {
@@ -50,6 +51,7 @@ public partial struct CollisionSystem : ISystem
                 foreach (ColliderCastHit hit in hits)
                 {
                     entityManager.SetEnabled(hit.Entity, false);
+                    Application.Quit();
                 }
 
                 hits.Dispose();

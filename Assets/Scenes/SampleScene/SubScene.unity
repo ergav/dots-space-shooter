@@ -152,7 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1810246882048786071, guid: c72cd5f71c46d874f99e23bc45e6c63b, type: 3}
-  spawnRate: 1
+  spawnRate: 5
+  spawnRateIncreaseInterval: 10
+  spawnRateIncreaseValue: 1
+  maxSpawnRate: 0.5
 --- !u!4 &510060853
 Transform:
   m_ObjectHideFlags: 0
